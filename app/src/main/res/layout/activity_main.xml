@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/colorBlack">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:id="@+id/toolBar"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_anchorGravity="bottom"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--&gt;-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:footerDividersEnabled="false"
+        android:numColumns="3"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:stretchMode="columnWidth">
+    </GridView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/items_layout" >
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:onClick="prevImageDownloader"
+            android:text="Prev"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorButton"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="nextImageDownloader"
+            android:text="Next"
+            android:background="@color/colorButton"
+            android:layout_marginLeft="14dp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

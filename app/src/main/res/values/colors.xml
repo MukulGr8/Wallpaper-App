@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorProgressBar">#E040FB</color>
+    <color name="colorBlack">#fff</color>
+    <color name="colorButton">#607D8B</color>
+    <color name="colorFAB">#E040FB</color>
+</resources>
